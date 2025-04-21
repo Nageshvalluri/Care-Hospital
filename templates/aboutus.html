@@ -1,0 +1,59 @@
+{% extends 'userbase.html' %}
+{% load static %}
+{% block content %}
+<section class="section doctors bg-dark text-white py-5">
+  <div class="container">
+    
+    <!-- Welcome Title -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <div class="section-title">
+          <h1 class="text-info">Welcome to <span class="fw-bold">CARE Hospitals, Hyderabad</span></h1>
+          <div class="divider mx-auto my-4 bg-info" style="height: 3px; width: 80px;"></div>
+          <p class="lead text-light">
+            CARE Hospitals, headquartered in Hyderabad, is one of India’s most trusted healthcare brands. Since 1997, we’ve evolved into a multi-specialty healthcare network delivering world-class medical services.
+          </p>
+          <p>
+            Our flagship hospital at <strong>Banjara Hills</strong> is a center of excellence in cardiology, neurology, nephrology, orthopedics, and critical care, combining cutting-edge treatment with compassion.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vision & Mission -->
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <div class="bg-secondary p-4 shadow rounded">
+          <h3 class="mb-3 text-warning">Our Vision & Mission</h3>
+          <p><strong>🌟 Vision:</strong> To be the most respected and trusted healthcare provider, known for clinical excellence and innovative practices.</p>
+          <p><strong>🎯 Mission:</strong> To provide compassionate, accessible, high-quality, and affordable healthcare services for everyone.</p>
+
+          <h4 class="mt-4 text-info">💡 Why Choose Us?</h4>
+          <ul class="list-unstyled ps-3">
+            <li class="mb-2">🏥 <strong>NABH & NABL Accredited Facility</strong></li>
+            <li class="mb-2">👨‍⚕️ <strong>Highly Experienced Medical Professionals</strong></li>
+            <li class="mb-2">🧬 <strong>Advanced Diagnostics & Robotic Surgeries</strong></li>
+            <li class="mb-2">🚨 <strong>24/7 Emergency & Trauma Care</strong></li>
+            <li class="mb-2">🌐 <strong>International Patient Services</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Locations -->
+    <div class="row mt-5">
+      <div class="col-md-12 text-center">
+        <h3 class="mb-4 text-info">📍 Our Locations in Hyderabad</h3>
+        <p class="mb-3">We proudly serve the city from multiple premium locations:</p>
+        <ul class="list-inline h5">
+          <li class="list-inline-item badge bg-info text-dark p-2 mx-2">🏨 Banjara Hills</li>
+          <li class="list-inline-item badge bg-info text-dark p-2 mx-2">🏨 HITEC City</li>
+          <li class="list-inline-item badge bg-info text-dark p-2 mx-2">🏨 Musheerabad</li>
+          <li class="list-inline-item badge bg-info text-dark p-2 mx-2">🏨 Nampally</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,117 @@
+{% load static %}
+<!-- Footer Start -->
+<footer class="footer section" style="background-color: #0b1e33; color: #e0e0e0;">
+  <div class="container">
+    <div class="row">
+      <!-- About Section -->
+      <div class="col-lg-4 mr-auto col-sm-6">
+        <div class="widget mb-5 mb-lg-0">
+          <div class="logo mb-4">
+            <h3 style="color: #00ffff;">Care Hospital System</h3>
+          </div>
+          <p>{{ page.aboutus|slice:":250" }}...</p>
+
+          <ul class="list-inline footer-socials mt-4">
+            <li class="list-inline-item">
+              <a href="https://maps.google.com" target="_blank" style="color: #e0e0e0;">
+                <i class="icofont-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://maps.google.com" target="_blank" style="color: #e0e0e0;">
+                <i class="icofont-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://maps.google.com" target="_blank" style="color: #e0e0e0;">
+                <i class="icofont-linkedin"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://maps.google.com" target="_blank" style="color: #e0e0e0;">
+                <i class="icofont-google-map"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6 col-sm-6">
+        <div class="widget mb-5 mb-lg-0">
+          <h4 class="text-capitalize mb-3" style="color: #00ffff;">Quick Links</h4>
+          <hr style="border-top: 2px solid #00ffff; width: 50px; margin-left: 0;">
+          <ul class="list-unstyled footer-menu lh-35">
+            <li><a href="{% url 'index' %}" class="footer-link">Home</a></li>
+            <li><a href="{% url 'docsignup' %}" class="footer-link">Doctor Signup</a></li>
+            <li><a href="{% url 'patreg' %}" class="footer-link">Patient Signup</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="widget widget-contact mb-5 mb-lg-0">
+          <h4 class="text-capitalize mb-3" style="color: #00ffff;">Get in Touch</h4>
+          <hr style="border-top: 2px solid #00ffff; width: 50px; margin-left: 0;">
+
+          <div class="footer-contact-block mb-4">
+            <div class="icon d-flex align-items-center">
+              <i class="icofont-email mr-3 text-info"></i>
+              <span class="h6 mb-0">Support Available 24/7</span>
+            </div>
+            <h5 class="mt-2"><a href="mailto:carehospitalshyd@gmail.com" class="footer-link">carehospitalshyd@gmail.com</a></h5>
+          </div>
+
+          <div class="footer-contact-block mb-4">
+            <div class="icon d-flex align-items-center">
+              <i class="icofont-phone mr-3 text-info"></i>
+              <span class="h6 mb-0">Emergency Hotline</span>
+            </div>
+            <h5 class="mt-2"><a href="tel:+91{{ page.mobilenumber }}" class="footer-link">{{ page.mobilenumber }}</a></h5>
+          </div>
+
+          <div class="footer-contact-block">
+            <div class="icon d-flex align-items-center">
+              <i class="icofont-clock-time mr-3 text-info"></i>
+              <span class="h6 mb-0">Working Hours</span>
+            </div>
+            <h5 class="mt-2">Mon to Fri: 08:30 AM - 12:00 PM</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-btm py-4 mt-5 border-top" style="border-color: #1f334d;">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-6">
+          <div class="copyright" style="color: #a0b5c9;">&copy; Care Hospital System</div>
+        </div>
+        <div class="col-lg-4 text-right">
+          <a class="backtop js-scroll-trigger" href="#top" style="color: #00ffff;">
+            <i class="icofont-long-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+.footer-link {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-link:hover {
+  color: #00ffff;
+}
+.footer-socials i {
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+.footer-socials i:hover {
+  color: #00ffff;
+}
+</style>
